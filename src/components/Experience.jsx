@@ -5,7 +5,7 @@ const Experience = () => {
     {
       company: "Rapt.AI",
       location: "Santa Clara, CA",
-      role: "Software Engineering Intern",
+      role: "Software Engineer",
       period: "May 2025 – Present",
       bullets: [
         "Engineered scalable frontend Observer Tool, reducing navigation time by 40%.",
