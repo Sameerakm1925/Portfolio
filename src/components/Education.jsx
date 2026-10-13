@@ -3,7 +3,7 @@ import React, { useEffect, useRef } from 'react';
 const Education = () => {
   const educationList = [
     {
-      institution: "California State University",
+      institution: "California State University, Fullerton",
       location: "Fullerton, CA",
       degree: "Master of Science, Computer Science",
       gpa: "GPA: 3.8/4",
