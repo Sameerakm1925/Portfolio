@@ -181,3 +181,93 @@ a {
 .magic-tap:active::after {
   animation: tapPulse 0.6s ease-out;
 }
+
+/* ===================== RESPONSIVE ===================== */
+
+/* Hamburger: hidden on desktop, shown on mobile */
+.hamburger { display: none !important; }
+.mobile-menu { display: none !important; }
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1.25rem;
+  }
+
+  /* Navbar */
+  .desktop-nav { display: none !important; }
+  .hamburger { display: flex !important; }
+  .mobile-menu { display: flex !important; }
+
+  /* Hero section */
+  section > .container,
+  .container[style] {
+    flex-direction: column !important;
+    gap: 2rem !important;
+    padding-top: 1rem !important;
+  }
+
+  /* Photo in hero */
+  .hero-photo {
+    width: clamp(200px, 60vw, 280px) !important;
+  }
+
+  /* Section headings */
+  h2 {
+    font-size: 1.75rem !important;
+  }
+
+  /* Experience / Education cards */
+  .glass-panel {
+    padding: 1.5rem !important;
+  }
+
+  /* Projects: disable sticky stacking on mobile */
+  .proj-card {
+    position: relative !important;
+    top: auto !important;
+    margin-bottom: 1.5rem !important;
+  }
+
+  /* Resume iframe height */
+  iframe {
+    height: 60vh !important;
+  }
+
+  /* Skills marquee slower on mobile */
+  .marquee-content {
+    gap: 2.5rem;
+    animation-duration: 18s;
+  }
+
+  /* Open to roles tags wrap nicely */
+  .roles-container {
+    flex-wrap: wrap;
+  }
+
+  /* Footer */
+  footer {
+    padding: 2rem 1rem !important;
+    font-size: 0.8rem !important;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    padding: 0 1.5rem;
+  }
+
+  /* Reduce hero font a touch on tablet */
+  h1 {
+    font-size: clamp(2rem, 4vw, 3rem) !important;
+  }
+
+  /* Experience / Education cards */
+  .glass-panel {
+    padding: 2rem !important;
+  }
+
+  /* Projects: reduce stacking offset on tablet */
+  .proj-card {
+    margin-bottom: 3rem !important;
+  }
+}
