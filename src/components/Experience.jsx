@@ -17,7 +17,7 @@ const Experience = () => {
       company: "Xenovex Technologies",
       location: "Chennai, India",
       role: "Backend Developer Intern",
-      period: "March 2023 – May 2023",
+      period: "March 2022 – May 2024",
       bullets: [
         "Deployed 8+ RESTful APIs scaling state election portal to 20,000+ concurrent users.",
         "Optimized PostgreSQL queries, cutting execution time by 40%.",
